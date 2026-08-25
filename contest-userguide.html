@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Contest Matrix User Guide: load Cabrillo contest logs, review countries and CQ zones, compare two callsigns, inspect zone timelines, path timing, and contest summaries.">
+<link rel="canonical" href="https://contest-matrices.net/contest-userguide">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<title>Contest Matrix User Guide</title>
+<link rel="stylesheet" href="site.css">
+<style>
+.guide-page{max-width:1040px;margin:auto;padding:24px;color:#18212b}
+.guide-nav{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 18px}
+.guide-nav a{border:1px solid #1d4f84;border-radius:6px;padding:8px 11px;text-decoration:none;font-weight:800;color:#1d4f84;background:#fff}
+.guide-hero{background:#fff;border:1px solid #d7dde4;border-radius:8px;padding:24px;margin-bottom:18px}
+.guide-hero h1{margin:0 0 8px;color:#1d4f84;font-size:34px}
+.guide-lead{font-size:21px;font-weight:750;max-width:820px;margin:0 0 8px}
+.guide-copy{font-size:16px;color:#56616e;max-width:860px}
+.guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0}
+.guide-card{background:#fff;border:1px solid #d7dde4;border-radius:8px;padding:16px}
+.guide-card h2,.guide-card h3{margin-top:0;color:#1d4f84}
+.guide-card ul,.guide-card ol{margin-bottom:0}
+.guide-shot{margin:12px 0}
+.guide-shot img{display:block;width:100%;height:auto;border:1px solid #d7dde4;border-radius:8px;background:#fff}
+.caption{font-size:13px;color:#56616e;margin-top:-4px}
+.guide-callout{border-left:4px solid #b45218;background:#fff8f2;border-radius:6px;padding:12px 14px;margin:14px 0}
+.guide-flow{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:12px 0}
+.guide-flow span{background:#eef2f6;border:1px solid #d7dde4;border-radius:999px;padding:7px 9px;text-align:center;font-weight:800;color:#425466;font-size:13px}
+.chip-a,.chip-b{display:inline-block;border-radius:5px;padding:1px 7px;font-weight:900}
+.chip-a{background:#ffe6d2;border:1px solid #efb47d;color:#7c3510}
+.chip-b{background:#dceeff;border:1px solid #9fc6f0;color:#1d4f84}
+table.guide-table{width:100%;border-collapse:collapse;margin:10px 0}
+.guide-table th,.guide-table td{border:1px solid #d7dde4;padding:8px;text-align:left}
+.guide-table th{background:#eef2f6;color:#1d4f84}
+@media(max-width:820px){.guide-grid,.guide-flow{grid-template-columns:1fr}.guide-page{padding:14px}}
+</style>
+</head>
+<body>
+<main class="guide-page">
+  <nav class="guide-nav" aria-label="Contest Matrix guide navigation">
+    <a href="contest-matrix.html">Open Contest Matrix</a>
+    <a href="index.html">Home</a>
+  </nav>
+
+  <section class="guide-hero">
+    <h1>Contest Matrix User Guide</h1>
+    <p class="guide-lead">Turn a Cabrillo contest log into operating intelligence.</p>
+    <p class="guide-copy">Use Contest Matrix to see which countries and CQ zones were worked, when a selected zone was active, how paths opened over time, and how two callsigns compare side by side.</p>
+  </section>
+
+  <section class="guide-card">
+    <h2>Choose The Outcome You Want</h2>
+    <p>The opening page is organised around outcomes. Load one log for a single-station review, or add Log B to turn the same view into a comparison.</p>
+    <div class="guide-flow">
+      <span>Countries</span>
+      <span>Zones</span>
+      <span>Zone Timeline</span>
+      <span>Path Matrix</span>
+      <span>Summary</span>
+    </div>
+    <figure class="guide-shot">
+      <img src="Images/contest-guide-01-home.png" alt="Contest Matrix home page showing Countries, Zones, Zone Timeline, Path Matrix, and Summary choices">
+    </figure>
+    <p class="caption">The home page opens with outcome buttons. Start with the question you want answered.</p>
+  </section>
+
+  <div class="guide-grid">
+    <section class="guide-card">
+      <h2>Quick Start: One Log</h2>
+      <ol>
+        <li>Open <a href="contest-matrix.html">Contest Matrix</a>.</li>
+        <li>Choose <strong>Countries</strong>, <strong>Zones</strong>, or <strong>Zone Timeline</strong>.</li>
+        <li>Press <strong>Get Log A</strong> and choose a Cabrillo log file.</li>
+        <li>The selected matrix appears immediately.</li>
+        <li>Add Log B later if you want a side-by-side comparison.</li>
+      </ol>
+    </section>
+
+    <section class="guide-card">
+      <h2>Quick Start: Compare Two Logs</h2>
+      <ol>
+        <li>Choose <strong>Countries</strong>, <strong>Zones</strong>, or <strong>Zone Timeline</strong>.</li>
+        <li>Press <strong>Get Log A</strong> and choose the first Cabrillo log.</li>
+        <li>Press <strong>Get Log B</strong> and choose the second Cabrillo log.</li>
+        <li>The same view expands to A/B comparison columns.</li>
+        <li>Use <strong>Summary</strong> to compare score components.</li>
+      </ol>
+    </section>
+  </div>
+
+  <section class="guide-card">
+    <h2>Practical Tip: Use Two Browser Windows</h2>
+    <p>Open Contest Matrix in one browser window and this User Guide in another. That lets you follow the guide without leaving your loaded log data.</p>
+    <ul>
+      <li><strong>Browser 1:</strong> Contest Matrix app.</li>
+      <li><strong>Browser 2:</strong> Contest Matrix User Guide.</li>
+    </ul>
+  </section>
+
+  <section class="guide-card">
+    <h2>Countries</h2>
+    <p><strong>Countries</strong> shows worked countries and entities by band. This is the clearest multiplier review. It quickly shows what was worked, what was missed, and which bands carried the country count.</p>
+    <p>With one log loaded, the table shows one station. With two logs loaded, Log A and Log B appear side by side under each band.</p>
+    <p><span class="chip-a">Log A</span> uses orange columns. <span class="chip-b">Log B</span> uses blue columns.</p>
+    <figure class="guide-shot">
+      <img src="Images/contest-guide-02-countries-one-log.png" alt="Countries matrix showing one Cabrillo log">
+    </figure>
+    <p class="caption">One log shows which countries/entities were worked on each band.</p>
+    <figure class="guide-shot">
+      <img src="Images/contest-guide-03-countries-compare.png" alt="Countries matrix comparing Log A and Log B">
+    </figure>
+    <p class="caption">Load Log B to compare two callsigns, stations, or contest years side by side.</p>
+    <div class="guide-callout">
+      <p><strong>How to read Countries:</strong> each worked country/entity shows <strong>1</strong> on each band where it was worked. Row totals show how many bands worked that country/entity. Column totals show unique countries/entities worked on each band; these are country multiplier counts before adjudication.</p>
+    </div>
+  </section>
+
+  <section class="guide-card">
+    <h2>Zones</h2>
+    <p><strong>Zones</strong> shows CQ zone activity by band. Use the date selectors when comparing selected contest days. This helps answer questions such as: which zones appeared on Day 1, which appeared on Day 2, and which band carried the strongest zone reach?</p>
+    <figure class="guide-shot">
+      <img src="Images/contest-guide-04-zones-one-log.png" alt="Zones matrix showing one Cabrillo log">
+    </figure>
+    <p class="caption">One log shows QSO activity by CQ zone and band.</p>
+    <figure class="guide-shot">
+      <img src="Images/contest-guide-05-zones-compare.png" alt="Zones matrix comparing Log A and Log B">
+    </figure>
+    <p class="caption">A/B columns compare selected contest days from each loaded log.</p>
+    <div class="guide-callout">
+      <p><strong>How to read Zones:</strong> cells show raw QSOs with each CQ zone on each band. Row totals show raw QSOs for that zone. The footer row shows unique CQ zones worked on each band; these are zone multiplier counts before adjudication.</p>
+    </div>
+  </section>
+
+  <section class="guide-card">
+    <h2>Zone Timeline</h2>
+    <p><strong>Zone Timeline</strong> shows when one selected CQ zone was active across the full contest period. Select a zone, then inspect the 30-minute UTC rows to see the timing of openings by band.</p>
+    <p>This view is useful for comparing years, callsigns, antennas, or strategies. A strong station may reveal openings that a weaker station missed.</p>
+    <figure class="guide-shot">
+      <img src="Images/contest-guide-06-zone-timeline-one-log.png" alt="Zone Timeline showing one log for a selected CQ zone">
+    </figure>
+    <p class="caption">One log shows the timing of activity from one selected CQ zone.</p>
+    <figure class="guide-shot">
+      <img src="Images/contest-guide-07a-zone-timeline-compare.png" alt="Zone Timeline comparison showing Day 1 rows near the top of the table">
+    </figure>
+    <p class="caption">Day 1 rows show when each band first became useful for the selected zone.</p>
+    <figure class="guide-shot">
+      <img src="Images/contest-guide-07b-zone-timeline-compare.png" alt="Zone Timeline comparison showing Day 2 and totals near the bottom of the table">
+    </figure>
+    <p class="caption">Day 2 rows and totals complete the full contest-period picture.</p>
+    <div class="guide-callout">
+      <p><strong>How to read Zone Timeline:</strong> cells show raw QSOs with the selected CQ zone during each 30-minute UTC bin. Row totals show QSOs in that time bin. Column totals show raw QSOs with the selected zone on each band.</p>
+    </div>
+  </section>
+
+  <section class="guide-card">
+    <h2>Path Matrix</h2>
+    <p><strong>Path Matrix</strong> uses one Cabrillo log to show timing by selected broad regions. It is the best view for seeing when Europe, North America, Oceania, Africa, Asia, or South America answered on each band.</p>
+    <p>Path Matrix uses one selected log. If you have already loaded Log A and Log B for comparison, Path Matrix still asks which single log to use.</p>
+    <p>The counting button cycles through:</p>
+    <ul>
+      <li><strong>Unique Zones per bin</strong> - default planning view.</li>
+      <li><strong>Cumulative Zones</strong> - zones counted once as they accumulate.</li>
+      <li><strong>Raw QSOs</strong> - every QSO in each 30-minute bin.</li>
+    </ul>
+    <figure class="guide-shot">
+      <img src="Images/contest-guide-08-path-matrix.png" alt="Path Matrix showing two selected regions and 96 half-hour rows across a two-day contest">
+    </figure>
+    <p class="caption">Path Matrix shows when selected broad regions were active by band across the contest.</p>
+  </section>
+
+  <section class="guide-card">
+    <h2>Summary</h2>
+    <p><strong>Summary</strong> gives a compact contest score estimate from the public Cabrillo log. It shows QSO count, zone multipliers, country multipliers, and raw points by band.</p>
+    <p>With Log A and Log B loaded, Summary shows two tables on the same page. This makes it easy to compare the shape of two results before looking deeper into Countries, Zones, or Zone Timeline.</p>
+    <figure class="guide-shot">
+      <img src="Images/contest-guide-09-summary-compare.png" alt="Contest Summary comparing two logs with Log A in orange and Log B in blue">
+    </figure>
+    <p class="caption">Summary compares the score shape of two logs before official adjudication.</p>
+  </section>
+
+  <section class="guide-card">
+    <h2>Planning And Review Ideas</h2>
+    <table class="guide-table">
+      <thead><tr><th>Question</th><th>Best View</th></tr></thead>
+      <tbody>
+        <tr><td>Which countries did this station work on each band?</td><td>Countries</td></tr>
+        <tr><td>Which CQ zones were worked by band?</td><td>Zones</td></tr>
+        <tr><td>When did one zone answer during the contest?</td><td>Zone Timeline</td></tr>
+        <tr><td>When were broad regions active by band?</td><td>Path Matrix</td></tr>
+        <tr><td>How do two callsigns or years compare?</td><td>Countries, Zones, Zone Timeline, Summary</td></tr>
+      </tbody>
+    </table>
+    <div class="guide-callout">
+      <p><strong>Operator idea:</strong> compare your own log against a stronger public log. Look for countries, zones, and time windows that the stronger station worked and you missed.</p>
+    </div>
+  </section>
+
+  <section class="guide-card">
+    <h2>Cabrillo Logs And Privacy</h2>
+    <p>Contest Matrix reads Cabrillo log files directly in your browser. The app does not upload your log to a server. It reads the station callsign, contest name, QSO dates, frequency, time, worked callsign, and CQ zone from the file.</p>
+    <p>Country matching uses CTY.DAT style prefix rules. It is useful for planning and review, but official contest results can differ after adjudication, duplicate checking, busted-call checking, and exchange checking.</p>
+    <p>The screenshots in this guide use example public logs such as <strong>K3WW_2025_MULTI-TWO_Final_12187708.log</strong> and <strong>W3LPL_2025_MULTI-TWO_Final_20470912.log</strong>. When a filename ends with the official score, Contest Matrix can show that score in the Summary view.</p>
+  </section>
+
+  <section class="guide-card">
+    <h2>Finding Public Cabrillo Logs</h2>
+    <p>Many major contests publish public Cabrillo logs after results are processed. Contest Matrix can read those logs when you save them as a plain text file.</p>
+    <ol>
+      <li>Open the contest public logs page in your browser.</li>
+      <li>Find the callsign you want to study.</li>
+      <li>Open the callsign log. It will usually appear as plain text in Cabrillo format.</li>
+      <li>Save the page as a file with a simple name, for example <strong>vk1a-2025-cqww-cw.log</strong>.</li>
+      <li>Open Contest Matrix and press <strong>Get Log A</strong>.</li>
+      <li>Select the saved <strong>.log</strong> or <strong>.txt</strong> file.</li>
+    </ol>
+    <p>If your browser saves the file as <strong>.txt</strong>, that is fine. A Cabrillo log is essentially a structured plain text file.</p>
+    <div class="guide-callout">
+      <p><strong>Example source:</strong> CQ WW public logs are published by contest year and mode. Use public logs responsibly and keep the original contest context in mind when comparing stations.</p>
+    </div>
+    <ul>
+      <li><a href="https://cqww.com/publiclogs/">CQ WW public logs</a></li>
+      <li><a href="https://cqww.com/scorescw.htm">CQ WW CW scores</a></li>
+      <li><a href="https://cqww.com/records.htm">CQ WW records</a></li>
+    </ul>
+  </section>
+
+  <section class="guide-card">
+    <h2>Important Notes</h2>
+    <ul>
+      <li>Blank cells mean no matching QSOs were found in the loaded log data.</li>
+      <li>Counts are based on the Cabrillo file loaded into the browser.</li>
+      <li>Countries and entities are approximate and depend on prefix lookup data.</li>
+      <li>Official results may be lower or different after contest adjudication.</li>
+      <li>Use the internal scroll bars inside the matrix panels.</li>
+    </ul>
+  </section>
+
+  <section class="guide-card">
+    <h2>Credits</h2>
+    <p>&copy; Author John Loftus. Technical assistance OpenAI.</p>
+  </section>
+</main>
+</body>
+</html>

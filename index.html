@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Contest Matrices turns Cabrillo contest logs into country, zone, timeline, path, and score-summary views for contest planning and review.">
+<link rel="canonical" href="https://contest-matrices.net/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:title" content="Contest Matrices">
+<meta property="og:description" content="Load Cabrillo contest logs in your browser and compare countries, CQ zones, timelines, paths, and score summaries.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://contest-matrices.net/">
+<title>Contest Matrices | Cabrillo Log Planning And Review</title>
+<link rel="stylesheet" href="site.css">
+<style>
+.contest-landing{max-width:1120px;margin:auto;padding:28px;color:#18212b}
+.hero{background:#fff;border:1px solid #d7dde4;border-radius:8px;padding:24px;margin-bottom:16px}
+.hero h1{margin:0 0 8px;color:#1d4f84;font-size:38px;line-height:1.1}
+.lead{font-size:22px;font-weight:800;max-width:860px;margin:0 0 10px}
+.copy{font-size:16px;color:#56616e;max-width:880px}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.button{display:inline-block;text-decoration:none;border:1px solid #1d4f84;background:#1d4f84;color:#fff;border-radius:6px;padding:10px 14px;font-weight:800}
+.button.secondary{background:#fff;color:#1d4f84}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.card{background:#fff;border:1px solid #d7dde4;border-radius:8px;padding:16px}
+.card h2{margin:0 0 8px;color:#1d4f84;font-size:20px}
+.card p{margin:0;color:#56616e}
+@media(max-width:820px){.contest-landing{padding:16px}.grid{grid-template-columns:1fr}.hero h1{font-size:32px}}
+</style>
+</head>
+<body>
+<main class="contest-landing">
+  <section class="hero">
+    <h1>Contest Matrices</h1>
+    <p class="lead">Turn Cabrillo contest logs into operating intelligence.</p>
+    <p class="copy">See which countries and CQ zones were worked, when selected zones opened, how broad paths behaved over time, and how two callsigns or contest years compare side by side.</p>
+    <div class="actions">
+      <a class="button" href="contest-matrix.html">Start Contest Matrix</a>
+      <a class="button secondary" href="contest-userguide.html">User Guide</a>
+    </div>
+  </section>
+
+  <section class="grid" aria-label="Contest Matrix features">
+    <article class="card">
+      <h2>Countries</h2>
+      <p>Review worked countries and entities by band, then compare one log against another.</p>
+    </article>
+    <article class="card">
+      <h2>CQ Zones</h2>
+      <p>Inspect zone multipliers and selected-day zone activity from public Cabrillo logs.</p>
+    </article>
+    <article class="card">
+      <h2>Timelines And Paths</h2>
+      <p>Find opening times by 30-minute UTC bins for selected zones and broad regions.</p>
+    </article>
+  </section>
+</main>
+</body>
+</html>
