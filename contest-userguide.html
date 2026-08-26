@@ -53,13 +53,13 @@ table.guide-table{width:100%;border-collapse:collapse;margin:10px 0}
     <p>The opening page is organised around outcomes. Load one log for a single-station review, or add Log B to turn the same view into a comparison.</p>
     <div class="guide-flow">
       <span>Countries</span>
-      <span>Zones</span>
+      <span>Zones by Day</span>
       <span>Zone Timeline</span>
       <span>Path Matrix</span>
       <span>Summary</span>
     </div>
     <figure class="guide-shot">
-      <img src="Images/contest-guide-01-home.png" alt="Contest Matrix home page showing Countries, Zones, Zone Timeline, Path Matrix, and Summary choices">
+      <img src="Images/contest-guide-01-home.png" alt="Contest Matrix home page showing Countries, Zones by Day, Zone Timeline, Path Matrix, and Summary choices">
     </figure>
     <p class="caption">The home page opens with outcome buttons. Start with the question you want answered.</p>
   </section>
@@ -69,7 +69,7 @@ table.guide-table{width:100%;border-collapse:collapse;margin:10px 0}
       <h2>Quick Start: One Log</h2>
       <ol>
         <li>Open <a href="contest-matrix.html">Contest Matrix</a>.</li>
-        <li>Choose <strong>Countries</strong>, <strong>Zones</strong>, or <strong>Zone Timeline</strong>.</li>
+        <li>Choose <strong>Countries</strong>, <strong>Zones by Day</strong>, or <strong>Zone Timeline</strong>.</li>
         <li>Press <strong>Get Log A</strong> and choose a Cabrillo log file.</li>
         <li>The selected matrix appears immediately.</li>
         <li>Add Log B later if you want a side-by-side comparison.</li>
@@ -79,7 +79,7 @@ table.guide-table{width:100%;border-collapse:collapse;margin:10px 0}
     <section class="guide-card">
       <h2>Quick Start: Compare Two Logs</h2>
       <ol>
-        <li>Choose <strong>Countries</strong>, <strong>Zones</strong>, or <strong>Zone Timeline</strong>.</li>
+        <li>Choose <strong>Countries</strong>, <strong>Zones by Day</strong>, or <strong>Zone Timeline</strong>.</li>
         <li>Press <strong>Get Log A</strong> and choose the first Cabrillo log.</li>
         <li>Press <strong>Get Log B</strong> and choose the second Cabrillo log.</li>
         <li>The same view expands to A/B comparison columns.</li>
@@ -116,18 +116,20 @@ table.guide-table{width:100%;border-collapse:collapse;margin:10px 0}
   </section>
 
   <section class="guide-card">
-    <h2>Zones</h2>
-    <p><strong>Zones</strong> shows CQ zone activity by band. Use the date selectors when comparing selected contest days. This helps answer questions such as: which zones appeared on Day 1, which appeared on Day 2, and which band carried the strongest zone reach?</p>
+    <h2>Zones by Day</h2>
+    <p><strong>Zones by Day</strong> shows CQ zone activity by band for the selected contest day. Use the date selectors to compare Day 1 with Day 2, or to compare selected days from two different logs.</p>
+    <p>This helps answer questions such as: which zones appeared on Day 1, which appeared on Day 2, and which band carried the strongest zone reach?</p>
     <figure class="guide-shot">
-      <img src="Images/contest-guide-04-zones-one-log.png" alt="Zones matrix showing one Cabrillo log">
+      <img src="Images/contest-guide-04-zones-one-log.png" alt="Zones by Day matrix showing one Cabrillo log">
     </figure>
     <p class="caption">One log shows QSO activity by CQ zone and band.</p>
     <figure class="guide-shot">
-      <img src="Images/contest-guide-05-zones-compare.png" alt="Zones matrix comparing Log A and Log B">
+      <img src="Images/contest-guide-05-zones-compare.png" alt="Zones by Day matrix comparing Log A and Log B">
     </figure>
     <p class="caption">A/B columns compare selected contest days from each loaded log.</p>
     <div class="guide-callout">
-      <p><strong>How to read Zones:</strong> cells show raw QSOs with each CQ zone on each band. Row totals show raw QSOs for that zone. The footer row shows unique CQ zones worked on each band; these are zone multiplier counts before adjudication.</p>
+      <p><strong>How to read Zones by Day:</strong> cells show raw QSOs with each CQ zone on each band for the selected day. Row totals show raw QSOs for that zone on that day. The footer row shows unique CQ zones worked on each band for that day; these are selected-day zone multiplier counts before adjudication.</p>
+      <p><strong>Period check:</strong> Summary uses the full contest period. Zones by Day uses the selected day only. The totals will differ unless the selected period is the same.</p>
     </div>
   </section>
 
@@ -170,7 +172,7 @@ table.guide-table{width:100%;border-collapse:collapse;margin:10px 0}
 
   <section class="guide-card">
     <h2>Summary</h2>
-    <p><strong>Summary</strong> gives a compact contest score estimate from the public Cabrillo log. It shows QSO count, zone multipliers, country multipliers, and raw points by band.</p>
+    <p><strong>Summary</strong> gives a compact full-contest score estimate from the public Cabrillo log. It shows QSO count, zone multipliers, country multipliers, and raw points by band across the full loaded contest period.</p>
     <p>With Log A and Log B loaded, Summary shows two tables on the same page. This makes it easy to compare the shape of two results before looking deeper into Countries, Zones, or Zone Timeline.</p>
     <figure class="guide-shot">
       <img src="Images/contest-guide-09-summary-compare.png" alt="Contest Summary comparing two logs with Log A in orange and Log B in blue">
@@ -184,10 +186,10 @@ table.guide-table{width:100%;border-collapse:collapse;margin:10px 0}
       <thead><tr><th>Question</th><th>Best View</th></tr></thead>
       <tbody>
         <tr><td>Which countries did this station work on each band?</td><td>Countries</td></tr>
-        <tr><td>Which CQ zones were worked by band?</td><td>Zones</td></tr>
+        <tr><td>Which CQ zones were worked by band on a selected day?</td><td>Zones by Day</td></tr>
         <tr><td>When did one zone answer during the contest?</td><td>Zone Timeline</td></tr>
         <tr><td>When were broad regions active by band?</td><td>Path Matrix</td></tr>
-        <tr><td>How do two callsigns or years compare?</td><td>Countries, Zones, Zone Timeline, Summary</td></tr>
+        <tr><td>How do two callsigns or years compare?</td><td>Countries, Zones by Day, Zone Timeline, Summary</td></tr>
       </tbody>
     </table>
     <div class="guide-callout">
